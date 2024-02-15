@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #E7E7E7;
+    padding-top: 100px;
+}
+
+header {
+    display: flex; /*para que os elementos fiquem um ao lado do outro*/
+    align-items: center; /*para que os elementos fiquem centralizados na vertical*/
+    margin-bottom: 40px; /*aqui estamos separando ele(header-titulo) do formulario*/
+}
+
+header img {
+    height: 36px;
+    margin-right: 16px;
+}
+
+header h1 { /*acessando uma tag*/
+    font-size: 40px;
+    font-weight: bold; /*para que os elementos fiquem em negrito*/
+}
+
+.container { /*acessando uma classe*/
+    max-width: 960px; 
+    width: 100%; /*significa que esse container ira ocupar 100% ate 960pixels*/
+    margin: 0 auto; /*fazendo esses 3 passos estamos centralizando nosso conteudo*/
+}
+
+form {
+    display: flex; /*porque estamos aplicando display flex ja que os elementos ja estao lado a lado? pq eles ficarao sempre iguais mesmo com mto zoom*/
+    max-width: 640px; /*area maxima*/
+    width: 100%;
+    justify-content: space-between; /*distribuindo espaçamento entre os itens*/
+    margin-bottom: 56px;
+}
+
+form input {
+    font-size: 24px;
+    background-color: #fff;
+    border: none;
+    border-bottom: 2px solid #000; /*adicionar uma borda inferior*/
+    padding: 8px;
+}
+
+form button { /*temos a tag form e dentro dela vamos estilizar o button*/
+    background-color: #009432;
+    color: #fff;
+    font-size: 24px; /*tamanho da fonte*/
+    font-weight: bold;
+    border: none; /*removendo a borda do botão*/
+    cursor: pointer; /*Adicionando cursor de mão*/
+    padding: 8px;
+}
+
+table {
+    width: 100%; /*ocupando toda area do container*/
+}
+
+table th {
+    border-bottom: 2px solid #000; /*adicionar uma borda inferior*/
+    padding: 16px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+table td {
+    padding: 16px 0;
+    text-align: center; /*alinha o texto no centro*/
+    font-size: 18px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1); /*aqui adicionamos uma linha na tabela, no corpo ta tabela "entre um andar e o outro" e o 0.1 é a transparencia*/
+}
+
+table td img {
+    height: 30px;
+}
+
+.resultado {
+    padding: 8px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #000;
+    border-radius: 3px;
+}
+
+.aprovado {
+    background-color: #009432;
+}
+
+.reprovado {
+    background-color: red;
+}
